@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mohazma Naseer — Graphic Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="nav-wrap">
+        <div class="container nav">
+            <a href="#" class="logo">Mohazma<span>Design</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="accent">Mohazma Naseer</span></h1>
+                <p class="lead">Creative Graphic Designer • Branding • Illustration • Photoshop</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+                <div class="socials">
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/new.jpg" alt="atwork">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate graphic designer with eight years of experience in branding, Logo Photoshop, and digital
+                        illustration.
+                        I create visual identities and creative assets that help brands stand out.
+                    </p>
+                    <ul class="about-list">
+                        <li><strong>Location:</strong> Haripur, Pakistan</li>
+                        <li><strong>Available for:</strong> Freelance & Full-time</li>
+                        <li><strong>Tools:</strong> Adobe Illustrator, Photoshop</li>
+                    </ul>
+                </div>
+                <div class="about-highlights">
+                    <div class="card">
+                        <h3>Branding</h3>
+                        <p>Logo systems,Brand</p>
+                    </div>
+                    <div class="card">
+                        <h3>Illustration</h3>
+                        <p>Custom illustrations for web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK / GALLERY -->
+    <section id="work" class="section work">
+        <div class="container">
+            <h2>Selected Work</h2>
+            <p class="muted">Click any item to view larger</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" tabindex="0">
+                    <img src="images/brand.jpeg">
+                    <div class="overlay">
+                    </div>
+                </div>
+
+                <div class="gallery-item" tabindex="0">
+                    <img src="images/strip.jpeg" >
+                    <div class="overlay">
+                    </div>
+                </div>
+
+                <div class="gallery-item" tabindex="0">
+                    <img src="images/wild.jpg">
+                    <div class="overlay">
+                    </div>
+                </div>
+
+                <div class="gallery-item" tabindex="0">
+                    <img src="images/umr.jpeg">
+                    <div class="overlay">
+                    </div>
+                </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="images/birds.jpeg" >
+                <div class="overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="images/logo.jpeg" >
+                <div class="overlay">
+                </div>
+            </div>
+              <div class="gallery-item" tabindex="0">
+                <img src="images/corel draw.jpg" >
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+            </div>
+
+        </section>
+
+    <!-- LIGHTBOX / MODAL -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img class="lightbox-img" src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h4>Branding</h4>
+                    <div class="skill-bar"><span style="width: 90%"></span></div>
+                </div>
+                <div class="skill">
+                    <h4>Illustration</h4>
+                    <div class="skill-bar"><span style="width: 80%"></span></div>
+                </div>
+                <div class="skill">
+                    <h4>Digital Design</h4>
+                    <div class="skill-bar"><span style="width: 75%"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-grid">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="formMsg" class="form-msg" aria-live="polite"></p>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>Email: <a href="mailto:you@example.com">mohazmanaseer786@gmail.com</a></p>
+                    <p>Phone: +92-336-5287698</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> Mohazma Naseer — Graphic Designer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
